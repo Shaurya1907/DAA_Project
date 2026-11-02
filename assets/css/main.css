@@ -3430,14 +3430,14 @@ ul.feature-icons li:nth-child(3n):before {
 }
 
 .theme-banner {
-	background: #17233D;
-	border-bottom: 1px solid #2B3A58;
+	background: linear-gradient(to bottom, #111A2E 0%, #10192B 42%, #0D1525 72%, #0B1220 100%);
+	border-bottom: 0;
 	overflow: hidden;
 	position: relative;
 }
 
 .theme-banner:before {
-	background: linear-gradient(90deg, rgba(45, 212, 220, 0.08), transparent 35%, rgba(84, 136, 255, 0.08));
+	background: linear-gradient(to bottom, rgba(45, 212, 220, 0.04), transparent 55%);
 	content: "";
 	inset: 0;
 	position: absolute;
