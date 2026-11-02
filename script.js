@@ -314,6 +314,12 @@ function showGanttChart(output, outputDiv) {
                 showRowLabels: false,
                 // groupByRowLabel:true
                 avoidOverlappingGridLines: true,
+            },
+            backgroundColor: "#111A2E",
+            colors: ["#2DD4DC", "#5488FF", "#F9B23D", "#A78BFA", "#34D399"],
+            hAxis: {
+                textStyle: { color: "#AAB8CF" },
+                gridlines: { color: "#2B3A58" }
             }
         };
         chart.draw(dataTable, options);
@@ -353,7 +359,14 @@ function showTimelineChart(output, outputDiv) {
         dataTable.addColumn({ type: "number", id: "Start" });
         dataTable.addColumn({ type: "number", id: "End" });
         dataTable.addRows(timelineChartData);
-        chart.draw(dataTable);
+        chart.draw(dataTable, {
+            backgroundColor: "#111A2E",
+            colors: ["#2DD4DC", "#5488FF", "#F9B23D", "#A78BFA", "#34D399"],
+            hAxis: {
+                textStyle: { color: "#AAB8CF" },
+                gridlines: { color: "#2B3A58" }
+            }
+        });
     }
     outputDiv.appendChild(timelineChart);
 }
